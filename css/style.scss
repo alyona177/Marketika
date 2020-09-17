@@ -1,0 +1,151 @@
+// === Common ===
+@import 'normilize';
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Light'), local('Lato-Light'), url('../font/latolight.woff2') format('woff2'), url('../font/latolight.woff') format('woff'), url('../font/latolight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Regular'), local('Lato-Regular'), url('../font/latoregular.woff2') format('woff2'), url('../font/latoregular.woff') format('woff'), url('../font/latoregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Bold'), local('Lato-Bold'), url('../font/latobold.woff2') format('woff2'), url('../font/latobold.woff') format('woff'), url('../font/latobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.section-inner {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato';
+}
+
+.flex-container {
+    display: flex;
+}
+// === /Common ===
+
+//  === Header ===
+.section-header{
+    color: #ffffff;
+    background: url('../img/bg-header.jpg') no-repeat top;
+    background-size: cover;
+    position: relative;
+
+    .section-inner {
+        height: 100vh;
+        position: relative;
+        z-index: 10;
+        flex-direction: column;
+    }
+
+    &::before {
+        content:"";
+        position: absolute;
+        top:0;
+        bottom:0;
+        right: 0;
+        left: 0;
+        background-color: #142729;
+        opacity: 0.5;
+
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .logo {
+        font-weight: 700;
+        font-size: 24px;
+        flex-shrink: 1;
+        padding-top: 35px;
+    }
+
+    .content {
+        flex-grow: 1;
+        align-items: center;
+        &-title {
+            font-weight: 700px;
+            font-size: 55px;
+            line-height: 60px;
+            margin-bottom: 16px;
+        }
+
+        &-subtitle {
+            font-size: 18px;
+            line-height: 32px;
+            margin: 0 auto 44px;
+            width: 80%;
+        }
+
+        &-form {
+            .form-input{
+                flex-grow: 1;
+                padding-right: 40px;
+                input {
+                    width: 100%;
+                    border: none;
+                    background: rgba(255,255,255,.25);
+                    color: white;
+                    font-size: 16px;
+                    margin: 0;
+                    padding: 16px 20px;
+                    outline: none;
+                    border-radius: 4px;
+
+                    &::placeholder {
+                        color: white;
+                    }
+                }
+            }
+            .form-button{
+                button{
+                    font-size: 16px;
+                    margin: 0;
+                    border: none;
+                    background: linear-gradient(to right,#fe985b,#fe4fa7);
+                    color: white;
+                    padding: 16px 20px;
+                    outline: none;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+//  === /Header ===
+
+//  === Promo ===
+.section-promo{}
+//  === /Promo ===
+
+//  === Founder ===
+.section-founder{}
+//  === /Founder ===
+
+//  === Plans ===
+.section-plans{}
+//  === /Plans ===
+
+//  === Free ===
+.section-free{}
+//  === /Free ===
+
+//  === Footer ===
+.section-footer{}
+//  === /Footer ===
