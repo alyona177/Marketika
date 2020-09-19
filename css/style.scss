@@ -37,6 +37,26 @@ body {
 .flex-container {
     display: flex;
 }
+
+.description-item {
+    .icon{
+        margin-bottom: 20px;
+    }
+    .title{
+        margin-bottom: 14px;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 700;
+        color: #414141;
+    }
+
+    .text{
+        font-size: 16px;
+        line-height: 27px;
+        font-weight: 300;
+        color: #6c6c6c;
+    }
+}
 // === /Common ===
 
 //  === Header ===
@@ -79,19 +99,6 @@ body {
     .content {
         flex-grow: 1;
         align-items: center;
-        &-title {
-            font-weight: 700px;
-            font-size: 55px;
-            line-height: 60px;
-            margin-bottom: 16px;
-        }
-
-        &-subtitle {
-            font-size: 18px;
-            line-height: 32px;
-            margin: 0 auto 44px;
-            width: 80%;
-        }
 
         &-form {
             .form-input{
@@ -131,7 +138,50 @@ body {
 //  === /Header ===
 
 //  === Promo ===
-.section-promo{}
+.section-promo{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-promo-1 {
+    .content, .video {
+        flex-basis: 50%;
+    }
+    .content{
+        padding-right: 50px;
+        .content-title{
+            font-size: 36px;
+            line-height: 51px;
+            font-weight: 700;
+            color:#414141;
+            margin-bottom: 56px;
+        }
+
+        .description-item {
+            margin-top: 28px;
+        }
+    }
+    .video{
+        img {
+            margin:30px auto;
+            display: block;
+            width: 95%;
+            height: auto;
+        }
+    }
+}
+
+.section-promo-2 {
+    display: flex;
+    padding-top: 86px;
+    border-top: 1px solid #e2e2e2;
+    margin-top: 120px;
+    text-align: center;
+
+    .description-item + .description-item{
+        margin-left: 40px;
+    }
+}
 //  === /Promo ===
 
 //  === Founder ===
